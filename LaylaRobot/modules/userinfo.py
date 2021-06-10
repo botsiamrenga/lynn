@@ -541,10 +541,13 @@ When marked as AFK, any mentions will be replied to with a message to say you're
  ➩ /setbio This user is a wolf` (reply to the user)
 
 *Overall Information about you:*
- ❍ /info*:* get information about a user. 
+ ❍ /info*:* get information about a user.
+
+* Send:*
+ ☞︎︎︎ /snd <Text>*:* Message like Lynn bot
  
-*What is that health thingy?*
- Come and see [HP System explained](https://t.me/OnePunchUpdates/192)
+*If you have any problem*
+ Please join [Mizo Android Users](https://t.me/puituflynn)
 """
 
 SET_BIO_HANDLER = DisableAbleCommandHandler("setbio", set_about_bio)
