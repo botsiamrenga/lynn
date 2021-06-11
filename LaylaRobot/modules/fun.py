@@ -376,10 +376,10 @@ TABLE_HANDLER = DisableAbleCommandHandler("table", table)
 SHOUT_HANDLER = DisableAbleCommandHandler("shout", shout)
 WEEBIFY_HANDLER = DisableAbleCommandHandler("weebify", weebify)
 GDMORNING_HANDLER = DisableAbleMessageHandler(
-    Filters.regex(r"(?i)(gm|good morning)"), goodmorning, friendly="goodmorning"
+    Filters.regex(r"(?i)(𝖌𝖒|𝖌𝖔𝖔𝖉 𝖒𝖔𝖗𝖓𝖎𝖓𝖌)"), 𝖌𝖔𝖔𝖉𝖒𝖔𝖗𝖓𝖎𝖓𝖌, friendly="𝖌𝖔𝖔𝖉𝖒𝖔𝖗𝖓𝖎𝖓𝖌"
 )
 GDNIGHT_HANDLER = DisableAbleMessageHandler(
-    Filters.regex(r"(?i)(gn|good night)"), goodnight, friendly="goodnight"
+    Filters.regex(r"(?i)(𝖌𝖓|𝖌𝖔𝖔𝖉 𝖓𝖎𝖌𝖍𝖙)"), 𝖌𝖔𝖔𝖉𝖓𝖎𝖌𝖍𝖙, friendly="𝖌𝖔𝖔𝖉𝖓𝖎𝖌𝖍𝖙"
 )
 
 dispatcher.add_handler(WEEBIFY_HANDLER)
