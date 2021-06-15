@@ -177,8 +177,8 @@ async def hmm(client, message):
         # test = emoji.demojize(test.strip())
 
         # Kang with the credits bitches @InukaASiTH
-        test = test.replace("layla", "Aco")
-        test = test.replace("layla", "Aco")
+        test = test.replace("lynn", "Aco")
+        test = test.replace("lynn", "Aco")
         URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=Lynn&ownername=@Didiktea"
         try:
             r = requests.request("GET", url=URL)
@@ -275,7 +275,7 @@ async def inuka(client, message):
 
 
 @layla.on_message(
-    filters.regex("layla|layla|Layla|Layla|Layla")
+    filters.regex("lynn|lynn|Lynn|Lynn|Lynn")
     & ~filters.bot
     & ~filters.via_bot
     & ~filters.forwarded
