@@ -91,7 +91,7 @@ buttons = [
             text="➕️ ADD 𝕃𝕪𝕟𝕟 TO YOUR GROUP 🔘", url="t.me/DikaMs_bot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="ℹ️ ABOUT", callback_data="layla_"),
+        InlineKeyboardButton(text="ℹ️ ABOUT ME", callback_data="layla_"),
         InlineKeyboardButton(text="📚 COMMANDS", callback_data="help_back"),
     ],
     [
@@ -697,7 +697,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Ka online leh thei chiah e 💗")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "I am now online")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
