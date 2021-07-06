@@ -200,7 +200,7 @@ def start(update: Update, context: CallbackContext):
                     update.effective_chat.id,
                     HELPABLE[mod].__help__,
                     InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(text="⭅ BACK", callback_data="help_back")]]
+                        [[InlineKeyboardButton(text="🏃 BACK", callback_data="help_back")]]
                     ),
                 )
 
@@ -362,7 +362,7 @@ def layla_about_callback(update: Update, context: CallbackContext):
         query.message.edit_text(
             text=""" ➪ Keihi *𝕃𝕪𝕟𝕟* ka ni a, a hnuai ami te khu group enkawl tu a min hman chuan ka ti thei e.
 
-☞  Bot chungchang i hriat chian duh chuan :- [HEI HI HMET RAWH](https://telegra.ph/Lynn-Bot-tutorial-05-18)
+☞  Lynn Bot chungchang i hriat chian duh chuan :- [HEI HI HMET RAWH](https://telegra.ph/Lynn-Bot-tutorial-05-18)
 
 ☞︎︎︎ *Members thar te ka lo lawmlut thei.*
 
@@ -408,7 +408,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="⭅ Go Back", callback_data="source_back")
+                    InlineKeyboardButton(text="🏃 Go Back", callback_data="source_back")
                  ]
                 ]
             ),
@@ -474,7 +474,7 @@ def get_help(update: Update, context: CallbackContext):
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="⭅ Back", callback_data="help_back")]]
+                [[InlineKeyboardButton(text="🏃 Back", callback_data="help_back")]]
             ),
         )
 
