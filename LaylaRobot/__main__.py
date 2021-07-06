@@ -88,7 +88,7 @@ Anihloh pawh in` *📖 Tutorial* `tih khu hmet la,min hman dan tur te i hre thei
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ADD Me TO YOUR GROUP 🔘", url="t.me/DikaMs_bot?startgroup=true"),
+            text="➕️ ADD ME TO YOUR GROUP 🔘", url="t.me/DikaMs_bot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="ℹ️ ABOUT ME", callback_data="layla_"),
