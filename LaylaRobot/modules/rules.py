@@ -55,7 +55,7 @@ def send_rules(update, chat_id, from_pm=False):
         )
     elif rules:
         update.effective_message.reply_text(
-            "A hnuai a Rules tih khu click la, Start tih kha i hmet leh dawn nia. Please click the button below to see the rules.",
+            "A hnuai a Rules tih khu click la, Start tih kha i hmet leh dawn nia. \n\nPlease click the button below to see the rules.",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
