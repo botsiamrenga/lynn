@@ -112,9 +112,6 @@ HELP_STRINGS = """
 """
 
 
-LYNN_IMG  = "https://telegra.ph/Lynn-02-26-2.jpg"
-
-
 DONATE_STRING = """Donate duhna rilru i put avangin ka lawm e.. Malsawmin awm rawh"""
 
 IMPORTED = {}
