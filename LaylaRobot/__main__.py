@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-『Chibai le hmelthate🥰, Kei hi [lynn chawngthu](https://t.me/DikaMs_bot) ka ni a, 』
+『Chibai le hmelthate🥰, Kei hi *Lynn chawngthu* ka ni a, 』
 
 I group enkawl pui tur che a duhtaka [Didiktea](https://t.me/Didiktea) siam ka ni!
  
@@ -102,7 +102,6 @@ buttons = [
         ),
     ],
 ]
-
 
 HELP_STRINGS = """
 *『HELP BUTTONS HERE』 *
