@@ -76,7 +76,7 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 『Chibai le hmelthate🥰, Kei hi *Lynn chawngthu* ka ni a, 』
 
-I group enkawl pui tur che a duhtaka [Didiktea](https://t.me/Didiktea) siam ka ni!
+I group enkawl pui tur che a duhtaka *Didiktea* siam ka ni!
  
 `A hnuai a` *📚 Commands* `button khu hmet la ka thil tihtheih te i hre dawn nia.
 
