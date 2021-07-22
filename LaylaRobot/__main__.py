@@ -91,7 +91,7 @@ buttons = [
             text="➕️ ADD ME TO YOUR GROUP 🔘", url="t.me/DikaMs_bot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="ℹ️ ABOUT ME", callback_data="layla_"),
+        InlineKeyboardButton(text="ℹ️ ABOUT BOT", callback_data="layla_"),
         InlineKeyboardButton(text="📚 COMMANDS", callback_data="help_back"),
     ],
     [
