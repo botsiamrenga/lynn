@@ -224,7 +224,7 @@ def new_member(update: Update, context: CallbackContext):
 
             # Welcome yourself
             elif new_mem.id == bot.id:
-                update.effective_message.reply_text("OwO Thanks for adding me...\nMake me admin to use all features in me.")
+                update.effective_message.reply_text("Thanks for adding me to your Group...\nIf you face any problem about the bot,please join suoport group @lynnsupportgroup.")
                 if creator:
                     bot.send_message(
                         JOIN_LOGGER,
