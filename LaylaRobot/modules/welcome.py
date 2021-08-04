@@ -224,7 +224,7 @@ def new_member(update: Update, context: CallbackContext):
 
             # Welcome yourself
             elif new_mem.id == bot.id:
-                update.effective_message.reply_text("I Group a min add avangin ka lawm e...\nAdmin ah min dah la buaina i neih loh nan @lynnsupportgroup hi join bawk la aw.")
+                update.effective_message.reply_text("I Group ah min add avangin ka lawm e...\n\nAdmin ah min dah la buaina i neih loh nan @lynnsupportgroup hi join bawk la aw.")
                 if creator:
                     bot.send_message(
                         JOIN_LOGGER,
