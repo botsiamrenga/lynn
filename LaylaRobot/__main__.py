@@ -110,7 +110,10 @@ HELP_STRINGS = """
 """
 
 
-DONATE_STRING = """Donate duhna rilru i put avangin ka lawm e.. Malsawmin awm rawh"""
+DONATE_STRING = """Eheuu, i donate dawn avangin ka van lawm tak em!
+Heng ah te hian i lo donate thei ang,
+Paypal i hman chuan [Tah hian hmet rawh](https://paypal.me/didiktea),
+Gpay hmanga i donate duh chuan ka Gpay na number 7005404497 ah hian ilo donate thei bawk ang"""
 
 IMPORTED = {}
 MIGRATEABLE = []
