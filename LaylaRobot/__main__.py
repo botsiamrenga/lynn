@@ -668,7 +668,7 @@ def donate(update: Update, context: CallbackContext):
             )
         except Unauthorized:
             update.effective_message.reply_text(
-                "Contact me in PM first to get donation information."
+                "Keihi i Group enkawl tur a siam Bot ka ni a, nung reng tur chuan min host na lam ah sum sen te angaih ve thin avang in a hautak hle a, ka nun reng theih nan pawisa i donate duh anih chuan private in i donate theihna tur kalo thawn ang che, i support na avangin kan lawm e !"
             )
 
 
