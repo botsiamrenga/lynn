@@ -664,7 +664,7 @@ def donate(update: Update, context: CallbackContext):
             )
 
             update.effective_message.reply_text(
-                "I've PM'ed you about donating to my creator!"
+                "Eheuu, i donate dawn avangin ka van lawm tak em! /nHeng ah te hian i lo donate thei ang,/n𝗣𝗮𝘆𝗽𝗮𝗹 : [𝗧𝗮𝗵 𝗵𝗶𝗮𝗻 𝗵𝗺𝗲𝘁 𝗿𝗮𝘄𝗵](https://paypal.me/didiktea),/n𝗚𝗽𝗮𝘆 𝗡𝘂𝗺𝗯𝗲𝗿 : +917005404497."  
             )
         except Unauthorized:
             update.effective_message.reply_text(
