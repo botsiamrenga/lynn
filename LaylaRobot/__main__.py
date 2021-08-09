@@ -668,10 +668,7 @@ def donate(update: Update, context: CallbackContext):
             )
         except Unauthorized:
             update.effective_message.reply_text(
-                "Eheuu, i donate dawn avangin ka van lawm tak em!
-Heng ah te hian i lo donate thei ang,
-𝗣𝗮𝘆𝗽𝗮𝗹 : [𝗧𝗮𝗵 𝗵𝗶𝗮𝗻 𝗵𝗺𝗲𝘁 𝗿𝗮𝘄𝗵](https://paypal.me/didiktea),
-𝗚𝗽𝗮𝘆 𝗡𝘂𝗺𝗯𝗲𝗿 : +917005404497."
+                "Eheuu, i donate dawn avangin ka van lawm tak em! /nHeng ah te hian i lo donate thei ang,/n𝗣𝗮𝘆𝗽𝗮𝗹 : [𝗧𝗮𝗵 𝗵𝗶𝗮𝗻 𝗵𝗺𝗲𝘁 𝗿𝗮𝘄𝗵](https://paypal.me/didiktea),/n𝗚𝗽𝗮𝘆 𝗡𝘂𝗺𝗯𝗲𝗿 : +917005404497."  
             )
 
 
