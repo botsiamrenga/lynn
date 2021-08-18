@@ -57,6 +57,7 @@ RUN apt update && apt upgrade -y && \
     libxi6 \
     xvfb \
     unzip \
+    ffmpeg \
     libopus0 \
     libopus-dev \
     && rm -rf /var/lib/apt/lists /var/cache/apt/archives /tmp
