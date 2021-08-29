@@ -27,7 +27,7 @@ def lyrics(update: Update, context: CallbackContext):
             else:
                 reply = "Couldn't find any lyrics for that song!"
         else:
-            reply = "Song not found!"
+            reply = "Lyrics Not found!"
         if len(reply) > 4090:
             with open("lyrics.txt", "w") as f:
                 f.write(f"{reply}\n\n\nOwO UwU OmO")
