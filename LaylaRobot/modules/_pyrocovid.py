@@ -4,7 +4,7 @@ from telegram import ParseMode, Update, Bot, Chat
 from telegram.ext import CallbackContext, CommandHandler, MessageHandler, BaseFilter, run_async
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 
-from LaylaRobot import dispatcher
+from Tereuhte import dispatcher
 
 import requests
 
@@ -27,15 +27,14 @@ def corona(update: Update, context: CallbackContext):
         for sdict in state_dict['statewise']:
             if sdict['state'].lower() == state_input.lower():
                 confirmed = sdict['confirmed']
-                active = sdict['active']
-                deceased = sdict['deceased']
-                state = sdict['state']
+                deceased = sdict['deaths']
                 recovered = sdict['recovered']
+                state = sdict['state']
                 break
     
     if state:
         message.reply_text(
-            '*Cases in %s:* %s\n\n*Confirmed:* %s\n*Active:* %s\n*Deceased:* %s\n*Recovered:* %s' % (state, confirmed, active, deceased, recovered),
+            '*Cases in %s:* %s\n\n*Deceased:* %s\n*Recovered:* %s' % (state, confirmed, deceased, recovered),
             reply_markup=InlineKeyboardMarkup(
         [[InlineKeyboardButton(text="Source", url="covid19india.org")]]
     ),
