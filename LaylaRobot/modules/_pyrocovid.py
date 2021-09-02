@@ -4,7 +4,7 @@ from telegram import ParseMode, Update, Bot, Chat
 from telegram.ext import CallbackContext, CommandHandler, MessageHandler, BaseFilter, run_async
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 
-from Tereuhte import dispatcher
+from LaylaRobot import dispatcher
 
 import requests
 
