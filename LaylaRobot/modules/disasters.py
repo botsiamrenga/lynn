@@ -644,6 +644,9 @@ Group admins/group owners do not need these commands.
 ➤ /del var <var>*:* Delete existing variable.
 ➤ /logs Get heroku dyno logs.
 
+*Corona*
+➤ /corona <state>*:* Get covid stats for Indian states. 
+
 `⚠️ Kan sakruang Mizoram tan`
 Visit @puituflynn for more information.
 """
