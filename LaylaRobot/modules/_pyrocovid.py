@@ -30,11 +30,12 @@ def corona(update: Update, context: CallbackContext):
                 deceased = sdict['deaths']
                 recovered = sdict['recovered']
                 state = sdict['state']
+                active = sdict['active']
                 break
     
     if state:
         message.reply_text(
-            '*Cases in %s:* %s\n\n*Deceased:* %s\n*Recovered:* %s' % (state, confirmed, deceased, recovered),
+            '*Cases in %s:* %s\n\n*Confirmed:* %s\n*Active:* %s\n*Deceased:* %s\n*Recovered:* %s' % (state, confirmed, active, deceased, recovered),
             reply_markup=InlineKeyboardMarkup(
         [[InlineKeyboardButton(text="Source", url="covid19india.org")]]
     ),
