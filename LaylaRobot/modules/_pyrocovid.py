@@ -27,10 +27,10 @@ def corona(update: Update, context: CallbackContext):
         for sdict in state_dict['statewise']:
             if sdict['state'].lower() == state_input.lower():
                 confirmed = sdict['confirmed']
-                deceased = sdict['deaths']
-                recovered = sdict['recovered']
+                deceased = sdict['active']
+                recovered = sdict['deceased']
                 state = sdict['state']
-                active = sdict['active']
+                active = sdict['recoverd']
                 break
     
     if state:
