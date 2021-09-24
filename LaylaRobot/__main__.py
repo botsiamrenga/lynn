@@ -112,7 +112,7 @@ HELP_STRINGS = """
 
 DONATE_STRING = """wow, I donate dawn avangin ka lawm e!
  Donate i duh tak tak chuan [Heihi hmet la](t.me/puituflynn) \
- #donate tih i thawn dawn nia. A nihloh pawhin Bot neitu hi [Didiktea](t.me/Didiktea) \
+ #donate tih i thawn dawn nia. A nihloh pawhin Bot neitu [Didiktea](t.me/Didiktea) \
  hi private in i be dawn nia ."""
 
 IMPORTED = {}
