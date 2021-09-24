@@ -111,9 +111,9 @@ HELP_STRINGS = """
 
 
 DONATE_STRING = """wow, I donate dawn avangin ka lawm e!
- Donate i duh tak tak chuan [Heihi hmet rawh](t.me/puituflynn) \
- A nihloh pawhin Bot neitu hi i be dawn nia! [Didiktea](t.me/Didiktea) \
- Group ah khan #donate tih i post dawn nia ."""
+ Donate i duh tak tak chuan [Heihi hmet la](t.me/puituflynn) \
+ #donate tih i thawn dawn nia. A nihloh pawhin Bot neitu hi [Didiktea](t.me/Didiktea) \
+ hi private in i be dawn nia ."""
 
 IMPORTED = {}
 MIGRATEABLE = []
