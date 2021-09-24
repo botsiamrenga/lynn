@@ -110,8 +110,10 @@ HELP_STRINGS = """
 """
 
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the owner of this bot By asking him where to donate [Didiktea](t.me/Didiktea) \ ."""
+DONATE_STRING = """wow, I donate dawn avangin ka lawm e!
+ Donate i duh tak tak chuan [Heihi hmet rawh](t.me/puituflynn) \
+ A nihloh pawhin Bot neitu hi i be dawn nia! [Didiktea](t.me/Didiktea) \
+ Group ah khan #donate tih i post dawn nia ."""
 
 IMPORTED = {}
 MIGRATEABLE = []
