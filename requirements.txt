@@ -68,4 +68,4 @@ envparse
 better_profanity
 nudepy
 cloudscraper
-
+tzlocal==2.0
