@@ -1,5 +1,16 @@
+import asyncio
+
+import os
+
+import subprocess
+
+import time
+
+import psutil
+
 from telegram.ext import run_async
 
+from LaylaRobot import StartTime
 from LaylaRobot import dispatcher
 from LaylaRobot.utils import formatter
 from LaylaRobot.modules.disable import DisableAbleCommandHandler
@@ -25,7 +36,7 @@ __handlers__ = [ADD_CCHAT_HANDLER]
 
 
 async def bot_sys_stats():
-    bot_uptime = int(time.time() - bot_start_time)
+    bot_uptime = int(time.time() - StartTime)
     cpu = psutil.cpu_percent()
     mem = psutil.virtual_memory().percent
     disk = psutil.disk_usage("/").percent
