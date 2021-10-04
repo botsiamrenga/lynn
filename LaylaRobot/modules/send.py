@@ -1,7 +1,7 @@
 from telegram.ext import run_async
 
 from LaylaRobot import dispatcher
-from LaylaRobot import formatter
+from LaylaRobot.utils import formatter
 from LaylaRobot.modules.disable import DisableAbleCommandHandler
 from LaylaRobot.modules.helper_funcs.alternate import send_message
 from LaylaRobot.modules.helper_funcs.chat_status import user_admin
