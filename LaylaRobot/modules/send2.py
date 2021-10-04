@@ -1,6 +1,6 @@
 from LaylaRobot import pbot as app
 
-from LaylaRobot.modules.send import bot_sys_stats
+from LaylaRobot.modules.sysstats import bot_sys_stats
 
 from pyrogram import filters
 
