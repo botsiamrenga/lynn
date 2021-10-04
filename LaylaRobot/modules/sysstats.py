@@ -1,3 +1,15 @@
+import asyncio
+
+import os
+
+import subprocess
+
+import time
+
+import psutil
+from LaylaRobot.utils import formatter
+from LaylaRobot import StartTime
+
 async def bot_sys_stats():
     bot_uptime = int(time.time() - StartTime)
     cpu = psutil.cpu_percent()
