@@ -71,3 +71,4 @@ motor
 cloudscraper
 send
 formatter
+cStringIO
