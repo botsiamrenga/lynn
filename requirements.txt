@@ -70,3 +70,4 @@ nudepy
 motor
 cloudscraper
 send
+formatter
