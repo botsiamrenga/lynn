@@ -99,6 +99,7 @@ buttons = [
             text="💬 GROUP", url="https://t.me/puituflynn"),
         InlineKeyboardButton(
             text="📖 Tutorial", url="https://t.me/lynnsupportgroup/26"),
+    ],
     [
         InlineKeyboardButton(
             text="System Stats 🖥",
