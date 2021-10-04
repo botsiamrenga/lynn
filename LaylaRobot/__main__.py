@@ -98,15 +98,16 @@ buttons = [
         InlineKeyboardButton(
             text="💬 GROUP", url="https://t.me/puituflynn"),
         InlineKeyboardButton(
-            text="📖 Tutorial", url="https://t.me/lynnsupportgroup/26"
-        ),
+            text="📖 Tutorial", url="https://t.me/lynnsupportgroup/26"),
     [
-            InlineKeyboardButton(
-                text="System Stats 🖥",
-                callback_data="stats_callback",
-            ),
+        InlineKeyboardButton(
+            text="System Stats 🖥",
+            callback_data="stats_callback",
+        ),
     ],
 ]
+
+
 HELP_STRINGS = """
 *『HELP BUTTONS HERE』 *
 ☞︎︎︎ _A hnuai a button ho khu ka thil tih theih te chu an ni e._ 
