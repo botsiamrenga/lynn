@@ -26,10 +26,6 @@ def send(update, context):
     send_message(update.effective_message, creply)
 
 
-ADD_CCHAT_HANDLER = DisableAbleCommandHandler("snd", send)
-dispatcher.add_handler(ADD_CCHAT_HANDLER)
-__command_list__ = ["snd"]
-__handlers__ = [ADD_CCHAT_HANDLER]
 
 
 # Stats Module
@@ -51,3 +47,9 @@ RAM: {mem}%
 DISK: {disk}%
 """
     return stats
+
+
+ADD_CCHAT_HANDLER = DisableAbleCommandHandler("snd", send)
+dispatcher.add_handler(ADD_CCHAT_HANDLER)
+__command_list__ = ["snd"]
+__handlers__ = [ADD_CCHAT_HANDLER]
