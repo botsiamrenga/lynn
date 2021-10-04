@@ -454,7 +454,7 @@ def get_help(update: Update, context: CallbackContext):
             )
             return
         update.effective_message.reply_text(
-            "Command na te i hriat duh chuan a hnuai a help tih khi hmet la, start tih kha i hmet leh dawn nia. /nContact me in PM to get the list of possible commands.",
+            "A hnuai a Help tih khu click la, Start tih kha i hmet leh dawn nia. \n\nPlease click the button below and click start to see what i can do.",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
