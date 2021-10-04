@@ -100,6 +100,11 @@ buttons = [
         InlineKeyboardButton(
             text="📖 Tutorial", url="https://t.me/lynnsupportgroup/26"
         ),
+    [
+            InlineKeyboardButton(
+                text="System Stats 🖥",
+                callback_data="stats_callback",
+            ),
     ],
 ]
 HELP_STRINGS = """
