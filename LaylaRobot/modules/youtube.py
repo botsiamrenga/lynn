@@ -127,6 +127,7 @@ async def download_video(v_url):
             supports_streaming=True,
             caption=ytdl_data["title"],
         )
+        await lmao.delete()
         os.remove(f"{ytdl_data['id']}.mp4")
 
 
