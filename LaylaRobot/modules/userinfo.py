@@ -117,10 +117,6 @@ def make_bar(per):
     return "■" * done + "□" * (10 - done)
 
 
-@app2.on_message(
-    filters.command("id", prefixes=USERBOT_PREFIX) & filters.user(SUDOERS)
-)
-@app.on_message(filters.command("id"))
 async def getid(client, message):
     chat = message.chat
     your_id = message.from_user.id
