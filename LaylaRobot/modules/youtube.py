@@ -17,7 +17,7 @@ from youtube_dl.utils import (
 from LaylaRobot.events import register as Sangtei
 
 
-@LaylaRobot(pattern="^/yt(audio|video) (.*)")
+@saitama(pattern="^/yt(audio|video) (.*)")
 async def download_video(v_url):
     """ For ytdl command, download media from YouTube and many other sites. """
     url = v_url.pattern_match.group(2)
