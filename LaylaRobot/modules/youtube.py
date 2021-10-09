@@ -14,10 +14,10 @@ from youtube_dl.utils import (
     XAttrMetadataError,
 )
 
-from LaylaRobot.events import register as Sangtei
+from LaylaRobot.events import register as LaylaRobot
 
 
-@Sangtei(pattern="^/yt(audio|video) (.*)")
+@LaylaRobot(pattern="^/yt(audio|video) (.*)")
 async def download_video(v_url):
     """ For ytdl command, download media from YouTube and many other sites. """
     url = v_url.pattern_match.group(2)
