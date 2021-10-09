@@ -14,15 +14,15 @@ from youtube_dl.utils import (
     XAttrMetadataError,
 )
 
-from LaylaRobot.events import register as saitama
+from LaylaRobot.events import register as Sangtei
 
 
 @LaylaRobot(pattern="^/yt(audio|video) (.*)")
 async def download_video(v_url):
-    """ For .ytdl command, download media from YouTube and many other sites. """
+    """ For ytdl command, download media from YouTube and many other sites. """
     url = v_url.pattern_match.group(2)
     type = v_url.pattern_match.group(1).lower()
-    lmao = await v_url.reply("`Preparing to download...`")
+    lmao = await v_url.reply("Preparing to download 😉")
     if type == "audio":
         opts = {
             "format": "bestaudio",
@@ -63,7 +63,7 @@ async def download_video(v_url):
         song = False
         video = True
     try:
-        await lmao.edit("`Fetching data, please wait..`")
+        await lmao.edit("Fetching data, please wait 😉")
         with YoutubeDL(opts) as ytdl:
             ytdl_data = ytdl.extract_info(url)
     except DownloadError as DE:
@@ -100,7 +100,7 @@ async def download_video(v_url):
         await lmao.edit(
             f"`Preparing to upload song:`\
         \n**{ytdl_data['title']}**\
-        \nby *{ytdl_data['uploader']}*"
+        \nby **{ytdl_data['uploader']}**"
         )
         await v_url.client.send_file(
             v_url.chat_id,
@@ -119,7 +119,7 @@ async def download_video(v_url):
         await lmao.edit(
             f"`Preparing to upload video:`\
         \n**{ytdl_data['title']}**\
-        \nby *{ytdl_data['uploader']}*"
+        \nby **{ytdl_data['uploader']}**"
         )
         await v_url.client.send_file(
             v_url.chat_id,
@@ -128,3 +128,9 @@ async def download_video(v_url):
             caption=ytdl_data["title"],
         )
         os.remove(f"{ytdl_data['id']}.mp4")
+
+
+__help__ = """
+ • `/ytaudio <link>` or `/ytvideo <link>`*:* Downlods a video or audio from a youtube video to the bots local server and uploads to telegram
+"""
+__mod_name__ = "YouTube"
