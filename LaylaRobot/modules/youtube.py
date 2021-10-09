@@ -114,6 +114,7 @@ async def download_video(v_url):
                 )
             ],
         )
+        await lmao.delete()
         os.remove(f"{ytdl_data['id']}.mp3")
     elif video:
         await lmao.edit(
