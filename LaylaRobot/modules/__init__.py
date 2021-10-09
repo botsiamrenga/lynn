@@ -26,7 +26,7 @@ aiohttpsession = ClientSession()
 
 arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
 
-app = Client("wbb", bot_token=BOT_TOKEN, api_id=API_ID, api_hash=API_HASH)
+app = Client("LaylaRobot", bot_token=BOT_TOKEN, api_id=API_ID, api_hash=API_HASH)
      
      if LOAD or NO_LOAD:
         to_load = LOAD
