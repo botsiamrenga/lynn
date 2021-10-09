@@ -63,7 +63,7 @@ async def download_video(v_url):
         song = False
         video = True
     try:
-        await lmao.edit("Fetching data, please wait 😉")
+        await lmao.edit("𝘽𝙪𝙖𝙩𝙨𝙖𝙞𝙝 𝙢𝙚𝙠 𝙖𝙣𝙞 𝙚 , please wait 😉")
         with YoutubeDL(opts) as ytdl:
             ytdl_data = ytdl.extract_info(url)
     except DownloadError as DE:
@@ -131,6 +131,6 @@ async def download_video(v_url):
 
 
 __help__ = """
- • `/ytaudio <link>` or `/ytvideo <link>`*:* Downlods a video or audio from a youtube video to the bots local server and uploads to telegram
+♬ /ytaudio <link>` or ♬ /ytvideo <link>`*:* Downlods a video or audio from a youtube video to the bots local server and uploads to telegram
 """
 __mod_name__ = "YouTube"
