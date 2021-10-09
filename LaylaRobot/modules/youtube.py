@@ -63,7 +63,7 @@ async def download_video(v_url):
         song = False
         video = True
     try:
-        await lmao.edit("𝘽𝙪𝙖𝙩𝙨𝙖𝙞𝙝 𝙢𝙚𝙠 𝙖𝙣𝙞 𝙚 , please wait 😉")
+        await lmao.edit("𝘽𝙪𝙖𝙩𝙨𝙖𝙞𝙝 𝙢𝙚𝙠 𝙖𝙣𝙞 𝙚 , 𝙥𝙡𝙚𝙖𝙨𝙚 𝙬𝙖𝙞𝙩 😉")
         with YoutubeDL(opts) as ytdl:
             ytdl_data = ytdl.extract_info(url)
     except DownloadError as DE:
@@ -98,7 +98,7 @@ async def download_video(v_url):
     time.time()
     if song:
         await lmao.edit(
-            f"`Preparing to upload song:`\
+            f"`𝙪𝙥𝙡𝙤𝙖𝙙 𝙢𝙚𝙠 𝙖𝙣𝙞 𝙚:`\
         \n**{ytdl_data['title']}**\
         \nby **{ytdl_data['uploader']}**"
         )
@@ -117,7 +117,7 @@ async def download_video(v_url):
         os.remove(f"{ytdl_data['id']}.mp3")
     elif video:
         await lmao.edit(
-            f"`Preparing to upload video:`\
+            f"`𝙪𝙥𝙡𝙤𝙖𝙙 𝙢𝙚𝙠 𝙖𝙣𝙞 𝙚:`\
         \n**{ytdl_data['title']}**\
         \nby **{ytdl_data['uploader']}**"
         )
