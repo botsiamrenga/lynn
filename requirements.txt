@@ -69,3 +69,4 @@ better_profanity
 nudepy
 cloudscraper
 tzlocal==2.0
+youtube_dl
