@@ -41,7 +41,7 @@ def send_rules(update, chat_id, from_pm=False):
             raise
 
     rules = sql.get_rules(chat_id)
-    text = f"He *{escape_markdown(chat.title)}* in kaihhruaina dan te chu:\n\n{rules}"
+    text = f"*{escape_markdown(chat.title)}* in kaihhruaina dan te chu:\n\n{rules}"
 
     if from_pm and rules:
         bot.send_message(
