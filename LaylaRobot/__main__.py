@@ -76,13 +76,10 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 『Chibai le hmelthate🥰, Kei hi *Lynn chawngthu* ka ni a, 』
-
 I group enkawl pui tur che a duhtaka *Didiktea* siam ka ni!
  
 `A hnuai a` *📚 Commands* `button khu hmet la ka thil tihtheih te i hre dawn nia.
-
 Anihloh pawh in` *📖 Tutorial* `tih khu hmet la,min hman dan tur te i hre thei bawk ang.`
-
 *『Thildang tihtheih tamtak kala nei a, i group ah min add in min han hmang chhin la i hre mai ang.』*
 """
 
@@ -206,7 +203,7 @@ def start(update: Update, context: CallbackContext):
                     update.effective_chat.id,
                     HELPABLE[mod].__help__,
                     InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(text="🏃 BACK", callback_data="help_back")]]
+                        [[InlineKeyboardButton(text="🔙GO BACK", callback_data="help_back")]]
                     ),
                 )
 
@@ -320,7 +317,7 @@ def help_button(update, context):
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="「🏃 GO BACK 」", callback_data="help_back")]]
+                    [[InlineKeyboardButton(text="「🔙 GO BACK 」", callback_data="help_back")]]
                 ),
             )
 
@@ -367,17 +364,12 @@ def layla_about_callback(update: Update, context: CallbackContext):
     if query.data == "layla_":
         query.message.edit_text(
             text=""" ➪ Keihi *𝕃𝕪𝕟𝕟* ka ni a, a hnuai ami te khu group enkawl tu a min hman chuan ka ti thei e.
-
 ☞  Lynn Bot chungchang i hriat chian duh chuan :- [HEI HI HMET RAWH](https://telegra.ph/Lynn-Bot-tutorial-05-18)
-
 ☞︎︎︎ *Members thar te ka lo lawmlut thei.*
-
 ☞︎︎︎ *Memebers te group a nawilo turin ka khuahkhirh thei.*
-
 ☞︎︎︎ *Hla Download nan min hmang thei.* 
    
 ☞︎︎︎ *Google a thil search tu atan min hmang thei.*
-
 ☞︎︎︎ Harsatna i tawh hun a i buai loh nan [MIZO ANDROID USERS](https://t.me/puituflynn) hi lo join ngei ang che. 
     \n_Bot chungchang bik a zawhna i neih chuan a chung a Group khi Join la ilo zawt thin dawn nia._
     \n_Thildang Android kaihhnawih lam pawh zawh theih reng ani bawk e._
@@ -387,7 +379,7 @@ def layla_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="🏃‍♀️Back", callback_data="layla_back")
+                    InlineKeyboardButton(text="🔙 GO BACK", callback_data="layla_back")
                  ]
                 ]
             ),
@@ -480,7 +472,7 @@ def get_help(update: Update, context: CallbackContext):
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="🏃 Back", callback_data="help_back")]]
+                [[InlineKeyboardButton(text="🔙 GO BACK", callback_data="help_back")]]
             ),
         )
 
