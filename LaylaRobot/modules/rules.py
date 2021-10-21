@@ -41,7 +41,7 @@ def send_rules(update, chat_id, from_pm=False):
             raise
 
     rules = sql.get_rules(chat_id)
-    text = f"The rules for *{escape_markdown(chat.title)}* are:\n\n{rules}"
+    text = f"He *{escape_markdown(chat.title)}* in kaihhruaina dan te chu:\n\n{rules}"
 
     if from_pm and rules:
         bot.send_message(
@@ -50,8 +50,8 @@ def send_rules(update, chat_id, from_pm=False):
     elif from_pm:
         bot.send_message(
             user.id,
-            "The group admins haven't set any rules for this chat yet. "
-            "This probably doesn't mean it's lawless though...!",
+            "Admin ten he Group rules hi an la siam rihlo. "
+            "Group rules an siamloh vang ringawt hian group hi a zelen viau tihna erawh ani lo...!",
         )
     elif rules:
         update.effective_message.reply_text(
@@ -68,8 +68,8 @@ def send_rules(update, chat_id, from_pm=False):
         )
     else:
         update.effective_message.reply_text(
-            "The group admins haven't set any rules for this chat yet. "
-            "This probably doesn't mean it's lawless though...!"
+            "Admin ten he Group rules hi an la siam rihlo. "
+            "Group rules an siamloh vang ringawt hian group hi a zelen viau tihna erawh ani lo...!"
         )
 
 
