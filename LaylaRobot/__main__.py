@@ -16,6 +16,8 @@ from LaylaRobot import (
     URL,
     WEBHOOK,
     SUPPORT_CHAT,
+    GROUP_START_IMG,
+    LYNN_PHOTO,
     dispatcher,
     StartTime,
     telethn,
