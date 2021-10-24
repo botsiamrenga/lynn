@@ -94,7 +94,9 @@ if ENV:
     SPAMWATCH_API = os.environ.get("SPAMWATCH_API", None)
 
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
-
+    
+    GROUP_START_IMG = os.environ.get("GROUP_START_IMG", True)
+    Lynn_PHOTO = os.environ.get("LYNN_PHOTO", True)
     try:
         BL_CHATS = set(int(x) for x in os.environ.get("BL_CHATS", "").split())
     except ValueError:
