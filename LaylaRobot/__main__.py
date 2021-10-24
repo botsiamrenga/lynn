@@ -50,6 +50,27 @@ from telegram.ext import (
 from telegram.ext.dispatcher import DispatcherHandlerStop, run_async
 from telegram.utils.helpers import escape_markdown
 
+@register(pattern=("/alive"))
+async def awake(event):
+  LYNN = event.sender.first_name
+  LYNN = "**♡ I,m Lynn Robot** \n\n"
+  LYNN += "**♡ I'm Working With Awesome Speed**\n\n"
+  LYNN += "**♡ Lynn: LATEST Version**\n\n"
+  LYNN += "**♡ My Creator:** [Didiktea](t.me/Didiktea)\n\n"
+  LYNN += "**♡ python-Telegram-Bot: 13.7**\n\n"
+  LYNN_BUTTON = [
+      [
+          Button.url("🚑 Helpline Group", f"https://t.me/{SUPPORT_CHAT}"),
+          Button.url("📢 Android Users", "https://t.me/puituflynn")
+      ]
+  ]
+  await telethn.send_file(
+      event.chat_id,
+      LYNN_PHOTO,
+      caption = LYNN,
+      buttons = LYNN_BUTTON,
+  )
+
 
 def get_readable_time(seconds: int) -> str:
     count = 0
