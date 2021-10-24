@@ -50,7 +50,7 @@ from telegram.ext import (
 from telegram.ext.dispatcher import DispatcherHandlerStop, run_async
 from telegram.utils.helpers import escape_markdown
 
-@register(pattern=("/alive"))
+@LaylaRobot(pattern=("/alive"))
 async def awake(event):
   LYNN = event.sender.first_name
   LYNN = "**♡ I,m Lynn Robot** \n\n"
